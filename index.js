@@ -85,7 +85,7 @@ const questions = [
 function generateREADME(fileName, data) {}
 function generateMarkDown(answers) {
   const markDownText = `
-# ${answers.title}
+# ${answers.title} [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Table of Contents
 
@@ -95,7 +95,7 @@ function generateMarkDown(answers) {
 ### [Testing](#Testing)
 ### [Contributors](#Contributors)
 ### [License](#License)
-### [Contact](#Contact)
+### [Questions](#Questions)
 
 ## Description
     
@@ -123,7 +123,7 @@ ${answers.contributors}
     
 ${answers.description}
 
-## Contact
+## Questions
 
 ${answers.name}
 https://github.com/${answers.username}
