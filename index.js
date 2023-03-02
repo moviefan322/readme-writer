@@ -7,6 +7,11 @@ const questions = [
   //title
   {
     type: "input",
+    message: "What is your full name?",
+    name: "name",
+  },
+  {
+    type: "input",
     message: "What is the title of your README?",
     name: "title",
   },
@@ -79,29 +84,50 @@ const questions = [
 //FUNCTIONS
 function generateREADME(fileName, data) {}
 function generateMarkDown(answers) {
-  const markDownText = `# <${answers.title}>
+  const markDownText = `
+# ${answers.title}
 
-    ## Description
-    
-    ${answers.description}
-    
-    ## Installation
-    
-    ${answers.installation}
+## Table of Contents
 
-    ## Usage
-    
-    ${answers.usage}    
+### [Description](#Description)
+### [Installation](#Installation)
+### [Usage](#Usage)
+### [Testing](#Testing)
+### [Contributors](#Contributors)
+### [License](#License)
+### [Contact](#Contact)
 
-    ![Screenshot of webpage](./Develop/assets/images/screenshot.png)
+## Description
     
-    ## Credits
+${answers.description}
     
-    ${answers.contributors}
+## Installation
+    
+${answers.installation}
 
-    ## License
+## Usage
     
-    ${answers.description}
+${answers.usage}    
+
+![Screenshot of webpage](./Develop/assets/images/screenshot.png)
+ 
+## Testing
+
+${answers.test}
+
+## Contributors
+    
+${answers.contributors}
+
+## License
+    
+${answers.description}
+
+## Contact
+
+${answers.name}
+https://github.com/${answers.username}
+${answers.email}
     `;
   fs.writeFile("README.md", markDownText, (err) => {
     if (err) console.log(err);
