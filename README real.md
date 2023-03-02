@@ -1,6 +1,7 @@
 
 # README-writer [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+
 ## Table of Contents
 
 ### [Description](#Description)
@@ -9,25 +10,25 @@
 ### [Testing](#Testing)
 ### [Contributors](#Contributors)
 ### [License](#License)
-### [Questions](#Questions)
+### [Contact](#Contact)
 
 ## Description
     
-It is a functional code to help automate the writing of README files
+This is a js program that automatically formats a readme
     
 ## Installation
     
-Simply run the file from terminal or your code editing program of choice
+The program can be executed through a terminal window or a code editing program of your choice
 
 ## Usage
     
-Run the js index and answer the questions, a README will be automatically generated with all of your content    
+It is used to write a README for any software that requires one    
 
-![Screenshot of webpage](./Develop/assets/images/screenshot.png)
+![Screenshot of webpage](./assets/images/screenshot.png)
  
 ## Testing
 
-Run the script and check it out!
+Run it and generate a README!
 
 ## Contributors
     
@@ -35,9 +36,9 @@ Benjamin Wright taught me everything I know
 
 ## License
     
-It is a functional code to help automate the writing of README files
+This is a js program that automatically formats a readme
 
-## Questions
+## Contact
 
 Philip Neumann
 https://github.com/moviefan322

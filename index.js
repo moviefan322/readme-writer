@@ -126,7 +126,9 @@ ${answers.description}
 ## Questions
 
 ${answers.name}
+
 https://github.com/${answers.username}
+
 ${answers.email}
     `;
   fs.writeFile("README.md", markDownText, (err) => {
