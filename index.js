@@ -79,6 +79,11 @@ const questions = [
     message: "What is your e-mail address?",
     name: "email",
   },
+  {
+    type: "input",
+    message: "Provide a relative path to a screenshot of your application",
+    name: "screenshot",
+  }
 ];
 
 //FUNCTIONS
@@ -89,40 +94,47 @@ function generateMarkDown(answers) {
 
 ## Table of Contents
 
-### [Description](#Description)
-### [Installation](#Installation)
-### [Usage](#Usage)
-### [Testing](#Testing)
-### [Contributors](#Contributors)
-### [License](#License)
-### [Questions](#Questions)
+- [Description](#Description)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Testing](#Testing)
+- [Contributors](#Contributors)
+- [License](#License)
+- [Questions](#Questions)
 
+<a id="Description"></a>
 ## Description
     
 ${answers.description}
     
+<a id="Installation"></a>
 ## Installation
     
 ${answers.installation}
 
+<a id="Usage"></a>
 ## Usage
     
 ${answers.usage}    
 
-![Screenshot of webpage](./Develop/assets/images/screenshot.png)
+![Screenshot of webpage](${answers.screenshot})
  
+<a id="Testing"></a>
 ## Testing
 
 ${answers.test}
 
+<a id="Contributors"></a>
 ## Contributors
     
 ${answers.contributors}
 
+<a id="License"></a>
 ## License
     
 ${answers.description}
 
+<a id="Questions"></a>
 ## Questions
 
 ${answers.name}
