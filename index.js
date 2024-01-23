@@ -143,7 +143,7 @@ https://github.com/${answers.username}
 
 ${answers.email}
     `;
-  fs.writeFile("README.md", markDownText, (err) => {
+  fs.writeFile("README-x.md", markDownText, (err) => {
     if (err) console.log(err);
     else {
       console.log("File written successfully\n");
